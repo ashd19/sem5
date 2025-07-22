@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Registration Form</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <form>
+    <!-- Username -->
+    <label for="username">Enter your Username</label>
+    <input type="text" id="username" name="username" placeholder="username" required />
+
+    <!-- Email -->
+    <label for="email">Enter your Email</label>
+    <input type="email" id="email" name="email" placeholder="abc@gmail.com" required />
+
+    <!-- Password -->
+    <label for="password">Enter your password</label>
+    <input type="password" id="password" name="password" placeholder="Enter password" required />
+
+    <!-- Confirm Password -->
+    <label for="confirm-password">Confirm your password</label>
+    <input type="password" id="confirm-password" name="confirm_password" placeholder="Re-enter password" required />
+
+    <!-- Gender -->
+    <label>Gender</label>
+    <input type="radio" id="male" name="gender" value="male" required />
+    <label for="male" style="display:inline; font-weight: normal;">Male</label>
+
+    <input type="radio" id="female" name="gender" value="female" />
+    <label for="female" style="display:inline; font-weight: normal;">Female</label>
+
+    <!-- Desired Sports -->
+    <label>Desired sports</label>
+    <input type="checkbox" id="cricket" name="sports" value="cricket" />
+    <label for="cricket" style="display:inline; font-weight: normal;">Cricket</label>
+
+    <input type="checkbox" id="football" name="sports" value="football" />
+    <label for="football" style="display:inline; font-weight: normal;">Football</label>
+
+    <input type="checkbox" id="hockey" name="sports" value="hockey" />
+    <label for="hockey" style="display:inline; font-weight: normal;">Hockey</label>
+
+    <!-- Birthdate -->
+    <label for="birthdate">Birthdate</label>
+    <input type="date" id="birthdate" name="birthdate" required />
+
+    <input type="submit" value="Submit" />
+  </form>
+</body>
+</html>

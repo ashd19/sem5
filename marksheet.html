@@ -1,0 +1,234 @@
+<!-- https://codedamn.com/problem/_M5vR438laIN2QU3pZWhu?previous=%2Fproblem-list%2Freactjs%3Fpage%3D1 -->
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>SSC Marksheet</title>
+  <style>
+    body {
+      font-family: 'Arial', sans-serif;
+      background: #f0e6f7;
+      padding: 20px;
+      display: flex;
+      justify-content: center;
+    }
+    .marksheet {
+      width: 700px;
+      border: 5px solid purple;
+      padding: 15px;
+      background: #fff;
+      box-shadow: 0 0 10px #bba8d6;
+      position: relative;
+    }
+    .header {
+      text-align: center;
+      color: purple;
+      font-weight: bold;
+      font-size: 14px;
+      margin-bottom: 10px;
+      border-bottom: 3px solid purple;
+      padding-bottom: 5px;
+    }
+    .sub-header {
+      text-align: center;
+      color: purple;
+      font-weight: bold;
+      font-size: 18px;
+      margin-bottom: 2px;
+    }
+    .sub-header span {
+      color: red;
+      font-weight: bold;
+    }
+    .section {
+      font-size: 13px;
+      margin-bottom: 15px;
+      color: #222;
+    }
+    .section label {
+      font-weight: bold;
+      width: 180px;
+      display: inline-block;
+      vertical-align: top;
+    }
+    .section .info {
+      display: inline-block;
+      width: 470px;
+      border-bottom: 1px dotted #999;
+      padding-left: 5px;
+      font-weight: bold;
+      text-transform: uppercase;
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      font-size: 13px;
+      margin-top: 10px;
+    }
+    table th, table td {
+      border: 1px solid #ccc;
+      padding: 5px 7px;
+      text-align: center;
+    }
+    table th {
+      background-color: #cda9dd;
+      color: purple;
+      font-weight: bold;
+    }
+    table td.subject {
+      text-align: left;
+      padding-left: 10px;
+      font-weight: bold;
+    }
+    .grand-total {
+      font-weight: bold;
+      background-color: #d9c6e8;
+      text-align: right;
+      padding-right: 10px;
+    }
+    .division {
+      margin-top: 10px;
+      text-align: right;
+      font-weight: bold;
+      font-size: 14px;
+      color: purple;
+      border: 2px solid purple;
+      padding: 5px 10px;
+      display: inline-block;
+    }
+    .note {
+      font-size: 10px;
+      color: #666;
+      margin-top: 15px;
+      border-top: 1px solid #ccc;
+      padding-top: 5px;
+      font-style: italic;
+    }
+    /* watermark */
+    .watermark {
+      position: absolute;
+      top: 100px;
+      left: 100px;
+      font-size: 40px;
+      color: rgba(255, 0, 0, 0.15);
+      font-weight: 900;
+      transform: rotate(-25deg);
+      pointer-events: none;
+      user-select: none;
+      width: 600px;
+      text-align: center;
+      z-index: 0;
+    }
+  </style>`
+</head>
+<body>
+  <div class="marksheet">
+    <div class="watermark">DUPLICATE<br>DOWNLOADED FROM WEBSITE</div>
+
+    <div class="header">
+      Board of Secondary Education : Andhra Pradesh
+    </div>
+    <div class="sub-header">
+      <span>S.S.C. PUBLIC EXAMINATIONS</span> March-2005 (Private)
+    </div>
+    <div class="sub-header" style="font-weight: normal; font-size: 11px; margin-bottom: 15px;">
+      Memorandum of Marks for Passed Candidates
+    </div>
+
+    <div class="section">
+      <label>Roll Number :</label>
+      <span class="info">1234567890</span>
+    </div>
+    <div class="section">
+      <label>Date of Birth :</label>
+      <span class="info">Sixteen-February-Nineteen-Ninety</span>
+    </div>
+    <div class="section">
+      <label>Candidate's Name :</label>
+      <span class="info">RAMACHANDRA REDDY</span>
+    </div>
+    <div class="section">
+      <label>Father's Name :</label>
+      <span class="info">PARTHASARATHI REDDY</span>
+    </div>
+    <div class="section">
+      <label>School Name :</label>
+      <span class="info">ZP HIGH SCHOOL</span>
+    </div>
+    <div class="section">
+      <label>Medium :</label>
+      <span class="info">ENGLISH</span>
+    </div>
+
+    <table>
+      <thead>
+        <tr>
+          <th>SUBJECT</th>
+          <th>MAXIMUM MARKS</th>
+          <th>QUALIFYING MARKS</th>
+          <th>MARKS SECURED (IN FIGURES)</th>
+          <th>MARKS SECURED (IN WORDS)</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td class="subject">FIRST LANGUAGE (TELUGU)</td>
+          <td>100</td>
+          <td>35</td>
+          <td>44</td>
+          <td>Forty-Four</td>
+        </tr>
+        <tr>
+          <td class="subject">SECOND LANGUAGE (HINDI)</td>
+          <td>100</td>
+          <td>20</td>
+          <td>52</td>
+          <td>Fifty-Two</td>
+        </tr>
+        <tr>
+          <td class="subject">THIRD LANGUAGE - ENGLISH</td>
+          <td>100</td>
+          <td>35</td>
+          <td>47</td>
+          <td>Forty-Seven</td>
+        </tr>
+        <tr>
+          <td class="subject">MATHEMATICS</td>
+          <td>100</td>
+          <td>35</td>
+          <td>87</td>
+          <td>Eighty-Seven</td>
+        </tr>
+        <tr>
+          <td class="subject">GENERAL SCIENCE</td>
+          <td>100</td>
+          <td>35</td>
+          <td>45</td>
+          <td>Forty-Five</td>
+        </tr>
+        <tr>
+          <td class="subject">SOCIAL STUDIES</td>
+          <td>100</td>
+          <td>35</td>
+          <td>59</td>
+          <td>Fifty-Nine</td>
+        </tr>
+      </tbody>
+      <tfoot>
+        <tr>
+          <td class="grand-total" colspan="3">GRAND TOTAL</td>
+          <td><strong>334</strong></td>
+          <td><strong>Three Hundred Thirty-Four</strong></td>
+        </tr>
+      </tfoot>
+    </table>
+
+    <div class="division">DIVISION : SECOND</div>
+
+    <div class="note">
+      * If any discrepancy is noticed between information displayed and original pass certificate, the verification agency may contact the Board for clarification.
+    </div>
+  </div>
+</body>
+</html>
