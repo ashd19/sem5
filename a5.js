@@ -15,6 +15,10 @@ if (age >= 18) {
   console.log("You are a kid.");
 }
 
+// ternary made of three parts 
+const presence = true
+const present = presence ? "student is present" : "student is absent ";
+
 /* ================= LOOPS ================= */
 /* Loops are like washing multiple plates: 
    - Instead of washing one by one manually, 
