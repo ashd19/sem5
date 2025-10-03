@@ -1,0 +1,51 @@
+import { useState } from "react"
+// zod // schema implementation validation , typeprops etc !!
+export default  function App(){
+  
+  const [counter , setCounter] = useState(0);
+  const [stdname,setstdname] = useState("");
+  const [rollno , setrollno] = useState("");
+  const handledetails = (e:any) =>{
+   // prevent page reload on submit
+   e.preventDefault();
+   alert(`Details saved!\n Received\nName:${stdname} Rollno:${rollno}`);
+
+   
+  }
+  const handledecrement = () =>{
+    if(counter > 0){
+      setCounter(counter-1);
+    }
+
+  }
+  return(
+    <>
+  <h1>1. Counter Program Using UseState hook</h1>
+  <h2>Count : {counter}</h2>
+  <button onClick={()=>setCounter(counter+1)}>Click to increment </button> 
+  <button onClick={handledecrement}>Click to decrement</button>
+<br />
+<br />
+<h1>
+  1.B Another example using useState
+</h1>
+<form action="" onSubmit={handledetails}>
+  <label htmlFor="name" > Enter your name:</label>
+  <input type="text" id="name" placeholder="Eg. John doe" value={stdname} onChange={(e)=>setstdname(e.target.value)}/>
+  <label htmlFor=""> Enter your Rollno:</label>
+  <input type="text" id="rollno" placeholder="Eg. 21" value={rollno}  onChange={(e)=>setrollno(e.target.value)} />
+  <button type="submit">Submit</button>
+</form>
+ <div>
+        <h3>Your Details:</h3>
+        <p>Name: {stdname}</p>
+        <p>Roll No: {rollno}</p>
+      </div>
+<br />
+<br />
+  <h2>2.UseState Hook</h2>
+  </>
+  )
+}
+
+
