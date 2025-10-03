@@ -1,16 +1,28 @@
-import { useState } from "react"
+import { useEffect, useState } from "react"
 // zod // schema implementation validation , typeprops etc !!
 export default  function App(){
   
   const [counter , setCounter] = useState(0);
   const [stdname,setstdname] = useState("");
   const [rollno , setrollno] = useState("");
+ 
+ // increment every 3 seconds on click of increment on 
+ useEffect(()=>{
+   const timer = setInterval(()=>{
+    setCounter((counter)=>counter+1);
+   },3000);
+   return ()=> clearInterval(timer)
+ },[])
+ 
+
   const handledetails = (e:any) =>{
    // prevent page reload on submit
    e.preventDefault();
    alert(`Details saved!\n Received\nName:${stdname} Rollno:${rollno}`);
 
-   
+  }
+  const handleincrement = ()=>{
+    setCounter(counter+1)
   }
   const handledecrement = () =>{
     if(counter > 0){
@@ -22,7 +34,7 @@ export default  function App(){
     <>
   <h1>1. Counter Program Using UseState hook</h1>
   <h2>Count : {counter}</h2>
-  <button onClick={()=>setCounter(counter+1)}>Click to increment </button> 
+  <button onClick={handleincrement}>Click to increment </button> 
   <button onClick={handledecrement}>Click to decrement</button>
 <br />
 <br />
@@ -47,5 +59,4 @@ export default  function App(){
   </>
   )
 }
-
 
