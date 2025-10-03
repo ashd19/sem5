@@ -6,7 +6,7 @@ export default  function App(){
   const [stdname,setstdname] = useState("");
   const [rollno , setrollno] = useState("");
  
- // increment every 3 seconds on click of increment on 
+ // increment every 3 seconds on click // ofincrement on , starts running on render a
  useEffect(()=>{
    const timer = setInterval(()=>{
     setCounter((counter)=>counter+1);
