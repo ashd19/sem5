@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Registration Form</title>
+  <link rel="stylesheet" href="form.css" />
+</head>
+<body>
+  <form>
+    <ul style="list-style-type: disc; padding-left: 20px;">
+
+      <li>
+        <label for="username">Enter your Username</label><br />
+        <input type="text" id="username" name="username" placeholder="username" required />
+      </li>
+
+      <li>
+        <label for="email">Enter your Email</label><br />
+        <input type="email" id="email" name="email" placeholder="abc@gmail.com" required />
+      </li>
+
+      <li>
+        <label for="password">Enter your password</label><br />
+        <input type="password" id="password" name="password" placeholder="Enter password" required />
+      </li>
+
+      <li>
+        <label for="confirm-password">Confirm your password</label><br />
+        <input type="password" id="confirm-password" name="confirm_password" placeholder="Re-enter password" required />
+      </li>
+
+      <li>
+        <label>Gender</label><br />
+        <input type="radio" id="male" name="gender" value="male" required />
+        <label for="male" style="display:inline; font-weight: normal;">Male</label>
+        <input type="radio" id="female" name="gender" value="female" />
+        <label for="female" style="display:inline; font-weight: normal;">Female</label>
+      </li>
+
+      <li>
+        <label>Desired sports</label><br />
+        <input type="checkbox" id="cricket" name="sports" value="cricket" />
+        <label for="cricket" style="display:inline; font-weight: normal;">Cricket</label>
+        <input type="checkbox" id="football" name="sports" value="football" />
+        <label for="football" style="display:inline; font-weight: normal;">Football</label>
+        <input type="checkbox" id="hockey" name="sports" value="hockey" />
+        <label for="hockey" style="display:inline; font-weight: normal;">Hockey</label>
+      </li>
+
+      <li>
+        <label for="birthdate">Birthdate</label><br />
+        <input type="date" id="birthdate" name="birthdate" required />
+      </li>
+
+      <li>
+        <input type="submit" value="Submit" />
+      </li>
+
+    </ul>
+  </form>
+</body>
+</html>
