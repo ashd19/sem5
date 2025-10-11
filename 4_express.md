@@ -1,13 +1,16 @@
 # What is express js ? what are the features of express js ?
 
 ## 1 Express.js is a fast, minimal, and flexible web framework for Node.js.
+
 ● It helps developers build web applications and APIs easily.
 ● It provides a robust set of features for building web and mobile applications.
 ● You can assume express as a layer built on the top of the Node.js that helps
 manage a server and routes.
 ● Express is an open-source that is developed and maintained by the Node.js
 foundation.
+
 ## 2 Why Use Express.js?
+
 Without Express, handling HTTP requests in Node.js requires writing a lot of code.
 Express simplifies this with:
 ● Easy routing (defining URL paths like /home, /about)
@@ -17,6 +20,7 @@ error handling)
 ● Supports building RESTful APIs and even full web apps
 
 ## 3 Features of Express.js
+
 F ast and minimalist
 Provides only the core features of a web server.
 ● Lightweight and flexible → you add extra features as needed via middleware
@@ -25,26 +29,58 @@ or external packages.
 to build web applications, leaving all other choices (database, templating,
 authentication, etc.) up to you.
 
-M  
-R 
-T
-S
-E
-E
-S
+M iddleware support  
+Middleware functions are the heart of Express.
+● They process requests before sending responses (e.g., logging,
+authentication, error handling)
 
+```
+app.use((req, res, next) => {
+  console.log('Request URL:', req.url);
+  next();
+});
+```
 
+R outing system
+● Provides a robust routing mechanism to handle different HTTP methods
+(GET, POST, PUT, DELETE)
+example:
 
+```
+app.get('/users', (req, res) => {
+  res.send('User List');
+});
+```
 
+T emplate engines
+● Supports popular template engines like Pug, EJS, Handlebars.
+● Helps generate dynamic HTML pages with server-side rendering.
 
+S uport for Restful apis
+Easily create RESTful web services.
+● Widely used to build backend APIs for web and mobile apps.
 
+S Suitable for small apps (single page apps) and large-scale enterprise apps.
+● Modular approach: add only what you need.
 
+E Extensive Ecosystem
+● Huge collection of middleware and third-party packages available via npm.
+● Example: body-parser for parsing request bodies, cors for handling
+cross-origin requests.
 
+E . Error Handling
+● Built-in mechanism for handling errors using middleware.
 
+example:
 
+```
+app.use((err, req, res, next) => {
+  res.status(500).send('Something broke!');
+});
+```
 
-
-
+9.Cross-Platform Support
+● Runs anywhere Node.js runs (Windows, macOS, Linux).
 
 # Explain Routing in expressjs with an example
 
